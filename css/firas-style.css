@@ -1,0 +1,391 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    color: white;
+    background-color: #111827;
+}
+
+.portfolio {
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header Styles */
+.header {
+    border-bottom: 4px solid #10b981;
+    padding: 1.5rem 0;
+}
+
+.header-title {
+    border: 2px solid white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header-title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #10b981;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-link {
+    border: 2px solid white;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Section Styles */
+.section {
+    border-bottom: 4px solid #10b981;
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+}
+
+/* About Section */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.about-card {
+    border: 2px solid white;
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #10b981;
+}
+
+.philosophy-title {
+    margin-top: 2rem;
+}
+
+.card-text {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.skills-json {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.project-card {
+    border: 2px solid white;
+}
+
+.project-header {
+    border-bottom: 2px solid white;
+    padding: 1rem;
+    background-color: #10b981;
+    color: black;
+}
+
+.project-header h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project-content {
+    padding: 2rem;
+}
+
+.project-image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.project-stack {
+    margin-bottom: 1rem;
+}
+
+.stack-label {
+    color: #10b981;
+    font-weight: bold;
+}
+
+.stack-tech {
+    margin-left: 0.5rem;
+    font-family: 'Courier New', monospace;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    border: 2px solid white;
+    padding: 0.5rem 0.75rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s;
+}
+
+.project-link:hover {
+    background-color: white;
+    color: black;
+}
+
+.project-link i {
+    width: 16px;
+    height: 16px;
+}
+
+/* Resume Section */
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.resume-experience,
+.resume-sidebar {
+    border: 2px solid white;
+    padding: 2rem;
+}
+
+.experience-item {
+    margin-bottom: 2rem;
+}
+
+.job-title {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.job-company {
+    color: #10b981;
+    margin-bottom: 0.5rem;
+}
+
+.job-duties {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.job-duties li {
+    margin-bottom: 0.25rem;
+}
+
+.education-item {
+    margin-bottom: 1rem;
+}
+
+.certifications-title {
+    margin-top: 2rem;
+}
+
+.certifications-list {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.certifications-list li {
+    margin-bottom: 0.5rem;
+}
+
+.download-resume {
+    margin-top: 2rem;
+}
+
+.download-btn {
+    border: 2px solid #10b981;
+    background-color: #10b981;
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s;
+}
+
+.download-btn:hover {
+    background-color: black;
+    color: #10b981;
+}
+
+.download-btn i {
+    width: 16px;
+    height: 16px;
+}
+
+/* Contact Section */
+.contact-card {
+    border: 2px solid white;
+    padding: 2rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+    color: #10b981;
+}
+
+.contact-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact-link {
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.contact-link:hover {
+    background-color: white;
+    color: black;
+}
+
+.contact-footer {
+    text-align: center;
+}
+
+.contact-quote {
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    border-top: 4px solid #10b981;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer p {
+    color: #10b981;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+    
+    .header-title h1 {
+        font-size: 3rem;
+    }
+    
+    .nav {
+        flex-wrap: nowrap;
+        gap: 1.5rem;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .resume-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+    outline: 2px solid #10b981;
+    outline-offset: 2px;
+}
